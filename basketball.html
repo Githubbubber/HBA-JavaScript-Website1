@@ -4,73 +4,17 @@
         <title> Stats Attack - Basketball </title>
         <link href="css/index.css" rel="stylesheet" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <style> 
-            body {  color: #8BC34A; text-align: center; }
-
-            table, th, td {
-            border: 3px solid #FFCCBC;
-            width: 900px;
-            height:;
-            }
-
-            .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            }
-            .dropbtn:hover, .dropbtn:focus {
-            background-color: #FFCCBC;
-            }
-
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-            .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            }
-            .dropdown-content a:hover {background-color: #f1f1f1}
-
-            .show { display:block; }
-        </style>
     </head>
 
     <body>
-        <img src="logo.png" width= "200" height ="140" />
+        <img src="media/logo.png" width= "200" height ="140" />
         <h1> STATS </h1>
 
-        <table id="table">
-            <tr>
-                <th>Players</th>
-                <br />
-                <th>Rebounds</th>
-                <br />
-                <th>Points</th>
-                <br />
-                <th>Assists</th>
-                <br />
-                <th>Blocks</th>
-                <br />
-                <th colspan="2">Field Goal Percentage</th>
-                <br />
-            </tr>
+        <table id="basketballStatsTable">
+            <tr> <th>Players</th> <br /> <th>Rebounds</th> <br /> <th>Points</th> <br /> <th>Assists</th> <br /> <th>Blocks</th> <br /> <th colspan="2">Field Goal Percentage</th> <br /> </tr>
 
-            <tr Points>
-                <td> <ol> <a href="http://www.espn.com/nba/player/_/id/6585/andre-drummond" title= "Andre Drummond " target="new"> Andre Drummond </a></ol></td>
+            <tr>
+                <td> </td>  <!--  <ol> <a href="http://www.espn.com/nba/player/_/id/6585/andre-drummond" title= "Andre Drummond " target="new"> Andre Drummond </a></ol>  -->
                 <td> </td>
                 <td> </td>
                 <td> </td>
@@ -78,7 +22,7 @@
                 <td> </td>
             </tr>
             <tr>
-                <td> <ol> <a href="http://www.espn.com/nba/player/_/id/3975/stephen-curry" title= "Stephen Curry " target="new"> Stephen Curry </a></ol></td>
+                <td> </td>  <!--  <ol> <a href="http://www.espn.com/nba/player/_/id/3975/stephen-curry" title= "Stephen Curry " target="new"> Stephen Curry </a></ol>-->
                 <td> </td>
                 <td> </td>
                 <td> </td>
@@ -86,7 +30,7 @@
                 <td> </td>
             </tr>
             <tr>
-                <td> <ol> <a href="http://www.espn.com/nba/player/_/id/3012/kyle-lowry" title= "Kyle Lowry" target="new"> Kyle Lowry </a></ol></td>
+                <td> </td> <!-- <ol> <a href="http://www.espn.com/nba/player/_/id/3012/kyle-lowry" title= "Kyle Lowry" target="new"> Kyle Lowry </a></ol> -->
                 <td> </td>
                 <td> </td>
                 <td> </td>
@@ -94,7 +38,7 @@
                 <td> </td>
             </tr>
             <tr>
-                <td> Anthony Davis </td>
+                <td> </td>  <!--  Anthony Davis   -->
                 <td> </td>
                 <td> </td>
                 <td> </td>
@@ -102,7 +46,7 @@
                 <td> </td>
             </tr>
             <tr>
-                <td> Rudy Gobert </td>
+                <td> </td> <!--  Rudy Gobert  -->
                 <td> </td>
                 <td> </td>
                 <td> </td>
@@ -111,28 +55,26 @@
             </tr>
         </table>
 
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-
         <left>
-            <img src="https://clutchpoints.com/wp-content/uploads/2018/03/Dirk_Nowitzki_becomes_first_ever_to_play_at_least_75_games_in_20th_season_of_career.jpg" width= "435" height ="325"/>
+            <img src="https://clutchpoints.com/wp-content/uploads/2018/03/Dirk_Nowitzki_becomes_first_ever_to_play_at_least_75_games_in_20th_season_of_career.jpg" width= "435" />
         </left>
 
-        <img src="https://yougabsports.com/wp-content/uploads/2015/05/NBA-logo.jpg" width= "155" height ="325"/>
+        <img src="https://yougabsports.com/wp-content/uploads/2015/05/NBA-logo.jpg" width= "155" >
 
         <right>
-            <img src="https://sportshub.cbsistatic.com/i/r/2018/10/29/ede9ec00-669e-4ff4-a9fb-ad6afdea847f/thumbnail/770x433/2317f7855c38fc3b0cd2f5ae5f702052/lebron-james-lakers.jpg" width= "435" height ="325"/>
+            <img src="https://sportshub.cbsistatic.com/i/r/2018/10/29/ede9ec00-669e-4ff4-a9fb-ad6afdea847f/thumbnail/770x433/2317f7855c38fc3b0cd2f5ae5f702052/lebron-james-lakers.jpg" width= "435" >
         </right>
     
-        <div class="dropdown">
+        <div id="navigation">
             <button id="myBtn" class="dropbtn">Dropdown</button>
             <div id="myDropdown" class="dropdown-content">
                 <a href= "index.html" title= "Home"> Home </a>
                 <span class="navigationSpace"/>
                 <br />
-                <a href= "index2.html" title= "Basketball"> Basketball </a>
+                <a href= "basketball.html" title= "Basketball"> Basketball </a>
                 <span class="navigationSpace"/>
                 <br />
-                <a href= "index3.html" title= "Football"> Football </a>
+                <a href= "football.html" title= "Football"> Football </a>
                 <span class="navigationSpace"/>
                 <br />
                 <a href= "index.html" title= "Contact"> Contact </a>
@@ -141,7 +83,6 @@
             </div>
         </div>
 
-
         <footer>
             <h5> OUR INFO </h5>
             <p> Roshawn Smith
@@ -149,50 +90,6 @@
             <p> Tina Sosa
             email: amantinasosa@gmail.com </p>
         </footer>
-
-        <script src="js/scripts.js"></script>
-        <script>
-            document.getElementById("myBtn").onclick = function() {myFunction()};
-
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            var testData = [1,2,3], x = 0;
-
-            while (x < testData.length) {
-                console.log(x);
-
-                var ourTable = document.getElementById(“aTr”);
-                var createdNode = document.createTextNode(x);
-
-                console.log(ourTable.appendChild(createdNode));
-                //[x].gexgContent = x;
-                x++;
-            }
-
-            $(function() {
-                var params = {
-                    // Request parameters
-                };
-
-                $.ajax({
-                    url: "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?" + $.param(params),
-                    beforeSend: function(xhrObj){
-                    // Request headers
-                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
-                    },
-                    type: "GET",
-                    // Request body
-                    data: "{body}"
-                })
-                .done(function(data) {
-                    alert("success");
-                })
-                .fail(function() {
-                    alert("error");
-                });
-            });
-        </script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
